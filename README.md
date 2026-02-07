@@ -25,7 +25,6 @@ The single-defect patterns capture distinct spatial defect distributions such as
 **_Complete Pipeline of code_ **
 
 ```text
-** Complete Pipeline of Code **
 
 Phase 1: Preprocessing
         ↓
