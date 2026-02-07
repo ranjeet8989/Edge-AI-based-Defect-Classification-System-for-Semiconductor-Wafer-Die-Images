@@ -4,7 +4,7 @@
 
 This repository presents an Edge AI–based wafer defect pattern classification system using the MixedWM38 WaferMap dataset. The project focuses on identifying and classifying wafer-level spatial defect patterns by treating wafer maps as two-dimensional representations of defect distributions. An Edge AI–driven wafer defect pattern classification framework using the MixedWM38 WaferMap dataset. The project employs a lightweight CNN to learn spatial defect distributions from wafer maps, enabling low-latency, edge-ready classification of wafer-level defect patterns for scalable semiconductor inspection.
 A lightweight Convolutional Neural Network (CNN) is trained from scratch to classify wafers into predefined defect categories, emphasizing low inference latency, computational efficiency, and edge deployment readiness. Unlike microscopy-based approaches, this work adopts a spatial-pattern–driven methodology, making it suitable for real-time applications in semiconductor manufacturing and yield monitoring.
-The solution is designed for portability and compatibility with edge-AI toolchains (e.g., ONNX, NXP eIQ), enabling scalable and cost-effective deployment in Industry 4.0 environments. It is mainly designed for the IESA DeepTech Hackathon event .
+The solution is designed for portability and compatibility with edge-AI toolchains (e.g., ONNX, NXP eIQ), enabling scalable and cost-effective deployment in Industry 4.0 environments. It is mainly designed for the IESA DeepTech Hackathon event.
 
 <img width="636" height="837" alt="image" src="https://github.com/user-attachments/assets/67fa1e63-76e4-4897-b5fe-ec477b4f6870" />
 
@@ -23,16 +23,20 @@ Each wafer map is encoded as a two-dimensional grid (52×52), where pixel values
 The single-defect patterns capture distinct spatial defect distributions such as center, edge-ring, scratch-like, cluster, and random layouts, while mixed-defect patterns represent combinations of multiple defect types occurring on the same wafer.
 
 **_Complete Pipeline of code_ **
-Phase 1: Preprocessing
-   ↓
-Phase 2: Training
-   ↓
-(SAVE trained model)
-   ↓
-(EXPORT trained model to ONNX)  ← HERE
-   ↓
-Phase 3: Evaluation / Inference
 
+```text
+** Complete Pipeline of Code **
+
+Phase 1: Preprocessing
+        ↓
+Phase 2: Training
+        ↓
+(SAVE trained model)
+        ↓
+(EXPORT trained model to ONNX)
+        ↓
+Phase 3: Evaluation / Inference
+```
 
 **Software Architecture**
 •	Programming Language: Python
