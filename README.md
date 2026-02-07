@@ -22,6 +22,18 @@ Each wafer map is encoded as a two-dimensional grid (52×52), where pixel values
 29 mixed-defect patterns
 The single-defect patterns capture distinct spatial defect distributions such as center, edge-ring, scratch-like, cluster, and random layouts, while mixed-defect patterns represent combinations of multiple defect types occurring on the same wafer.
 
+**_Complete Pipeline of code_ **
+Phase 1: Preprocessing
+   ↓
+Phase 2: Training
+   ↓
+(SAVE trained model)
+   ↓
+(EXPORT trained model to ONNX)  ← HERE
+   ↓
+Phase 3: Evaluation / Inference
+
+
 **Software Architecture**
 •	Programming Language: Python
 •	Deep Learning Framework: TensorFlow / PyTorch
@@ -32,7 +44,7 @@ The CNN learns both local and global spatial relationships among defect location
 
 **4. Conclusion:-**
 
-The used dataset of wafer defect image classification effecetively address the defect issue and classifies them accordingly into 8 classes. By selecting single-defect patterns as primary classes, treating normal wafers as the Clean class, and grouping mixed-defect patterns under an “Other” category, the approach avoids class overlap and supports robust model training.
+The used dataset of wafer defect image classification effectively addresses the defect issue and classifies them into 8 classes. By selecting single-defect patterns as primary classes, treating normal wafers as the Clean class, and grouping mixed-defect patterns under an “Other” category, the approach avoids class overlap and supports robust model training.
 
 
 
